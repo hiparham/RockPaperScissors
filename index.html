@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="script.js"></script>
+    <title>Javascript</title>
+  </head>
+  <body>
+    <div
+      class="grid grid-cols-3 gap-5 max-w-[30rem] mx-auto py-[10vh] w-11/12"
+    >
+      <button data-id="rock" class="aspect-square bg-sky-800 rounded-md text-white md:text-3xl">Rock</button>
+      <button data-id="paper" class="aspect-square bg-sky-800 rounded-md text-white md:text-3xl">Paper</button>
+      <button data-id="scissors" class="aspect-square bg-sky-800 rounded-md text-white md:text-3xl">Scissors</button>
+    </div>
+    <h2 class="winner text-center capitalize tracking-wide font-semibold max-w-sm mx-auto w-full"></h2>
+  </body>
+</html>
