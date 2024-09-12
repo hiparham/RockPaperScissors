@@ -7,14 +7,47 @@
     <script type="module" src="script.js"></script>
     <title>Javascript</title>
   </head>
-  <body>
-    <div
-      class="grid grid-cols-3 gap-5 max-w-[30rem] mx-auto py-[10vh] w-11/12"
-    >
-      <button data-id="rock" class="aspect-square bg-sky-800 rounded-md text-white md:text-3xl">Rock</button>
-      <button data-id="paper" class="aspect-square bg-sky-800 rounded-md text-white md:text-3xl">Paper</button>
-      <button data-id="scissors" class="aspect-square bg-sky-800 rounded-md text-white md:text-3xl">Scissors</button>
+  <body class="bg-gradient-to-r from-slate-700 to-slate-800">
+    <div class="grid grid-cols-3 gap-5 max-w-[30rem] mx-auto py-[10vh] w-11/12">
+      <div class="text-white col-span-3 py-5 grid grid-cols-3 text-center">
+        <p>Your Score : <span class="your_sc"></span></p>
+        <p>Round : <span class="round"></span></p>
+        <p>Computer Score : <span class="pc_sc"></span></p>
+      </div>
+      <button
+        data-id="rock"
+        class="aspect-square bg-white rounded-md text-black md:text-3xl"
+      >
+        Rock
+      </button>
+      <button
+        data-id="paper"
+        class="aspect-square bg-white rounded-md text-black md:text-3xl"
+      >
+        Paper
+      </button>
+      <button
+        data-id="scissors"
+        class="aspect-square bg-white rounded-md text-black md:text-3xl"
+      >
+        Scissors
+      </button>
     </div>
-    <h2 class="winner text-center capitalize tracking-wide font-semibold max-w-sm mx-auto w-full"></h2>
+    <h2
+      class="winner text-white text-center capitalize tracking-wide font-semibold max-w-sm mx-auto w-full"
+    ></h2>
+    <div class="last fixed inset-0 grid place-items-center hidden">
+      <div class="max-w-sm py-10 w-full relative z-10 bg-white txt text-center">
+        <p class="yeah"></p>
+        <button
+          class="resetBtn mx-auto block py-2 px-12 rounded-md text-white bg-slate-900 mt-10"
+        >
+          Restart The Game
+        </button>
+      </div>
+      <div
+        class="absolute h-full w-full inset-0 bg-gradient-to-r from-green-400 via-cyan-200 to-blue-500 opacity-[80%]"
+      ></div>
+    </div>
   </body>
 </html>
